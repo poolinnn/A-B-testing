@@ -1,0 +1,49 @@
+# Statistical Analysis Report: User Engagement and Conversion Metrics
+
+##Executive Summary
+This comprehensive statistical analysis evaluated user engagement metrics and conversion rates between two interface variants (Baseline and Treatment) using rigorous hypothesis testing methodologies. The study demonstrates statistically significant differences in both continuous engagement metrics and binary conversion outcomes.
+
+## Methodology Overview
+
+### Data Generation
+- Generated synthetic datasets with 7,000 observations per group
+- Modeled session duration with normal distributions (Baseline: μ=120, σ=45; Treatment: μ=124, σ=48)
+- Simulated conversion events with binomial distributions (Baseline: 10%; Treatment: 11.5%)
+
+### Statistical Tests Applied
+1. **Descriptive Analysis**: Mean, standard deviation, min/max values
+2. **Distributional Testing**: 
+   - Levene's test for variance equality (p < 0.001 - unequal variances confirmed)
+   - Shapiro-Wilk normality tests (mixed results, robust testing applied)
+3. **Hypothesis Testing**:
+   - Welch's t-test for unequal variances
+   - Mann-Whitney U test (non-parametric alternative)
+   - Z-test for proportion differences
+4. **Effect Size Calculation**: Cohen's d for practical significance
+
+## Key Findings
+
+### Session Duration Analysis
+- Baseline group: 119.70 minutes average (SD ≈ 45)
+- Treatment group: 124.32 minutes average (SD ≈ 48)
+- Statistical significance: p < 0.0001 (both t-test and Mann-Whitney)
+- Effect size: Cohen's d = 0.074 (small practical effect)
+
+### Conversion Rate Analysis
+- Baseline conversion: 9.76% (683/7000 conversions)
+- Treatment conversion: 12.07% (845/7000 conversions)
+- Absolute improvement: 2.31 percentage points
+- Statistical significance: p < 0.0001 (Z-test)
+
+## Statistical Conclusions
+1. **Session Duration**: Treatment variant shows significantly longer sessions (p < 0.001), though the practical effect size is modest
+2. **Conversion Performance**: Treatment variant demonstrates superior conversion rates (p < 0.001) with substantial business impact
+3. **Robustness**: Results consistent across parametric and non-parametric tests
+
+## Business Implications
+The Treatment interface variant demonstrates measurable improvements in both user engagement (longer sessions) and conversion efficiency (higher conversion rates). While session duration improvement shows statistical significance with modest practical impact, the conversion rate increase represents a meaningful business improvement of 23.7% relative improvement over baseline.
+
+## Limitations
+- Synthetic data ensures methodological validity but lacks real-world context
+- Assumptions of normality partially violated, necessitating robust testing approaches
+- Effect sizes should be interpreted within business context for practical decision-making
